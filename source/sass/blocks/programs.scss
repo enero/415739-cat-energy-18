@@ -1,0 +1,35 @@
+.programs {
+  @include side_padding;
+  background-color: $bg-color-white;
+}
+
+.programs__choose-button {
+  @include text("Oswald", 14px, 18px);
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: $text-color-white;
+  background-color: $bg-color-leaf;
+}
+
+.programs__item {
+  background-color: $bg-color-lightgray;
+}
+
+.programs__title {
+  @include text("Oswald", 24px, 37px);
+  text-transform: uppercase;
+  color: $text-color-black;
+}
+
+.programs__description {
+  @include text("Arial", 14px, 18px);
+  color: $text-color-darkgray;
+}
+
+.programs__catalog-link {
+  @include text("Oswald", 16px, 16px);
+  text-transform: uppercase;
+  text-decoration: none;
+  color: $text-color-black;
+}

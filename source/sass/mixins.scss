@@ -1,0 +1,10 @@
+@mixin side_padding {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+@mixin text($fontFamily, $fontSize, $lineHeight) {
+  font-family: $fontFamily, sans-serif;
+  font-size: $fontSize;
+  line-height: $lineHeight;
+}

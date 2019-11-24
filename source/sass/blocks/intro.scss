@@ -1,0 +1,20 @@
+.intro {
+  @include side_padding;
+  background-color: $bg-color-leaf;
+  background-image: url("../../img/index-background-mobile@1x.jpg");
+  background-repeat: no-repeat;
+}
+
+.intro__header {
+  @include text("Oswald", 36px, 36px);
+  text-transform: uppercase;
+  text-align: center;
+  color: $text-color-white;
+}
+
+.intro__slogan {
+  @include text("Oswald", 14px, 14px);
+  text-transform: uppercase;
+  text-align: center;
+  color: $text-color-white;
+}

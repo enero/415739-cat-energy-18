@@ -1,0 +1,20 @@
+.products {
+  @include side_padding;
+  background-color: $bg-color-white;
+}
+
+.product__info-title a {
+  @include text("Oswald", 16px, 20px);
+  text-transform: uppercase;
+  text-decoration: none;
+  color: $text-color-black;
+}
+
+.product__order {
+  @include text("Oswald", 16px, 20px);
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: $text-color-white;
+  background-color: $bg-color-leaf;
+}
