@@ -1,5 +1,6 @@
 .page-header {
   @include text("Oswald", 36px, 60px);
   padding: 11px 19px 15px 20px;
-  color: $text-color-black;
+  background-color: $page-header-bg-color;
+  color: $page-header-color;
 }

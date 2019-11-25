@@ -1,6 +1,5 @@
 .intro {
-  @include side_padding;
-  background-color: $bg-color-leaf;
+  background-color: $intro-bg-color;
   background-image: url("../../img/index-background-mobile@1x.jpg");
   background-repeat: no-repeat;
 }
@@ -9,12 +8,12 @@
   @include text("Oswald", 36px, 36px);
   text-transform: uppercase;
   text-align: center;
-  color: $text-color-white;
+  color: $intro-header-color;
 }
 
 .intro__slogan {
   @include text("Oswald", 14px, 14px);
   text-transform: uppercase;
   text-align: center;
-  color: $text-color-white;
+  color: $intro-slogan-color;
 }

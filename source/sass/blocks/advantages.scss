@@ -1,14 +1,13 @@
 .advantages {
-  @include side_padding;
-  background-color: $bg-color-white;
+  background-color: $advantages-bg-color;
 }
 
 .advantages__title {
   @include text("Oswald", 36px, 60px);
-  color: $text-color-black;
+  color: $advantages-title-color;
 }
 
 .advantages__item {
   @include text("Arial", 14px, 18px);
-  color: $text-color-darkgray;
+  color: $advantages-item-color;
 }
