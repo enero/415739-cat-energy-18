@@ -1,0 +1,5 @@
+.copyright__link--text {
+  @include text("Arial", 16px, 16px);
+  text-decoration: none;
+  color: $copyright-link-color;
+}

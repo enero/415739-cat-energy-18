@@ -1,0 +1,19 @@
+.products {
+  background-color: $products-bg-color;
+}
+
+.product__info-title a {
+  @include text("Oswald", 16px, 20px);
+  text-transform: uppercase;
+  text-decoration: none;
+  color: $product-info-title-color;
+}
+
+.product__order {
+  @include text("Oswald", 16px, 20px);
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  background-color: $product-button-bg-color;
+  color: $product-button-color;
+}

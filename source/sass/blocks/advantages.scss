@@ -1,0 +1,13 @@
+.advantages {
+  background-color: $advantages-bg-color;
+}
+
+.advantages__title {
+  @include text("Oswald", 36px, 60px);
+  color: $advantages-title-color;
+}
+
+.advantages__item {
+  @include text("Arial", 14px, 18px);
+  color: $advantages-item-color;
+}
