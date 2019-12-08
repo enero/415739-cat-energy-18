@@ -1,6 +1,59 @@
 .page-header {
   @include text("Oswald", 36px, 60px);
-  padding: 11px 19px 15px 20px;
+  box-sizing: border-box;
   background-color: $page-header-bg-color;
   color: $page-header-color;
+}
+
+.page-header__menu-wrapper {
+  @include mobile-side-padding;
+  background-color: $page-header-top-bg-color;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 65px;
+}
+
+.page-header__logo img {
+  margin-top: 11px;
+  width: 191px;
+  height: 39px;
+}
+
+@media (min-width: $tablet-width) {
+  .page-header {
+    padding: 24px 30px;
+    background-image: none;
+    background-color: $page-header-bg-color-tablet;
+  }
+
+  .page-header__menu-wrapper {
+    flex-direction: row;
+    height: 60px;
+    background-color: transparent;
+  }
+
+  .page-header__logo img {
+    margin-top: 0;
+    width: 174px;
+    height: 59px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-header {
+    padding: 53px 40px 29px 40px;
+  }
+
+  .page-header--index {
+    height: 696px;
+    background-image: url("../../img/index-background-desktop@1x.jpg");
+    background-position: top right;
+    background-repeat: no-repeat;
+  }
+
+  .page-header__logo img {
+    width: 203px;
+    height: 60px;
+  }
 }

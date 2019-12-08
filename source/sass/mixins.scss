@@ -1,3 +1,24 @@
+@mixin mobile-side-padding() {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+@mixin tablet-side-padding() {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+@mixin desktop-side-padding() {
+  padding-left: 110px;
+  padding-right: 110px;
+}
+
+@mixin reset-list() {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
 @mixin text($fontFamily, $fontSize, $lineHeight) {
   font-family: $fontFamily, sans-serif;
   font-size: $fontSize;

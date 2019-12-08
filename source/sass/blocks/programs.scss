@@ -1,4 +1,5 @@
 .programs {
+  margin: 0 auto;
   background-color: $programs-bg-color;
 }
 
@@ -11,8 +12,13 @@
   color: $programs-button-color;
 }
 
+.programs__list {
+  @include reset-list;
+}
+
 .programs__item {
   background-color: $programs-item-bg-color;
+  min-height: 100px;
 }
 
 .programs__title {
@@ -31,4 +37,31 @@
   text-transform: uppercase;
   text-decoration: none;
   color: $programs-catalog-link-color;
+}
+
+@media (max-width: $mobile-width-only) {
+  .programs__item + .programs__item {
+    margin-top: 20px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .programs {
+    width: 708px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .programs {
+    width: 1220px;
+  }
+
+  .programs__list {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .programs__item {
+    width: 570px;
+  }
 }

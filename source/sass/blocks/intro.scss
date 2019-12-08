@@ -1,19 +1,61 @@
 .intro {
-  background-color: $intro-bg-color;
-  background-image: url("../../img/index-background-mobile@1x.jpg");
-  background-repeat: no-repeat;
+  text-align: center;
 }
 
 .intro__header {
+  height: 305px;
+  margin: 0 auto;
+  background-color: $intro-bg-color;
+  background-image: url("../../img/index-background-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: top center;
+
+  & h1,
+  & p {
+    display: block;
+    width: 320px;
+    margin: 0 auto;
+  }
+}
+
+.intro__title {
   @include text("Oswald", 36px, 36px);
-  text-transform: uppercase;
-  text-align: center;
+  font-weight: normal;
   color: $intro-header-color;
+  margin: 0;
+  padding-top: 29px;
 }
 
 .intro__slogan {
   @include text("Oswald", 14px, 14px);
   text-transform: uppercase;
-  text-align: center;
   color: $intro-slogan-color;
+}
+
+.intro__image {
+  display: block;
+  margin: 0 auto;
+}
+
+@media (min-width: $tablet-width) {
+  .intro__header {
+    width: 528px;
+    height: auto;
+    background-image: none;
+    background-color: transparent;
+  }
+
+  .intro__title {
+    color: $intro-header-invert-color;
+  }
+
+  .intro__slogan {
+    color: $intro-slogan-invert-color;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .intro__header {
+    width: 754px;
+  }
 }

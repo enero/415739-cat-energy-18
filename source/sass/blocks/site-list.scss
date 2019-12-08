@@ -1,3 +1,8 @@
+.site-list {
+  display: flex;
+  flex-direction: column;
+}
+
 .site-list__item a {
   @include text("Oswald", 20px, 20px);
   font-weight: 500;
@@ -5,4 +10,10 @@
   text-decoration: none;
   text-align: center;
   color: $site-list-link-color;
+}
+
+@media (min-width: $tablet-width) {
+  .site-list {
+    flex-direction: row;
+  }
 }

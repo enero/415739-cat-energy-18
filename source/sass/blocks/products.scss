@@ -2,6 +2,15 @@
   background-color: $products-bg-color;
 }
 
+.products__list {
+  @include reset-list;
+  border: 1px solid #ededed;
+}
+
+.product__info {
+  display: flex;
+}
+
 .product__info-title a {
   @include text("Oswald", 16px, 20px);
   text-transform: uppercase;
@@ -16,4 +25,41 @@
   text-decoration: none;
   background-color: $product-button-bg-color;
   color: $product-button-color;
+}
+
+@media (max-width: $mobile-width-only) {
+  .products__item + .products__item {
+    border-top: 1px solid $product-item-border-color;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .products {
+    width: 768px;
+    margin: 0 auto;
+  }
+
+  .products__list {
+    display: flex;
+    flex-wrap: wrap;
+    border: 0;
+  }
+
+  .products__item {
+    width: 324px;
+    height: 430px;
+    margin: 140px 30px 0 30px;
+    background-color: $lightgray; /*todo*/
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .products {
+    width: 1440px;
+  }
+
+  .products__item {
+    width: 245px;
+    margin: 142px 40px 0 40px;
+  }
 }
