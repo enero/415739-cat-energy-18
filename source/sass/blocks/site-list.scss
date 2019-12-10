@@ -16,4 +16,8 @@
   .site-list {
     flex-direction: row;
   }
+
+  .site-list__item + .site-list__item {
+    margin-left: 38px;
+  }
 }

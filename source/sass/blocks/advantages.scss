@@ -24,10 +24,6 @@
 }
 
 @media (min-width: $tablet-width) {
-  .advantages {
-    width: 708px;
-  }
-
   .advantages__list {
     display: flex;
     flex-wrap: wrap;
@@ -35,12 +31,16 @@
   }
 
   .advantages__item {
-    width: 245px;
+    width: 50%;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .advantages {
-    width: 1220px;
+  .advantages__list {
+    flex-wrap: nowrap;
+  }
+
+  .advantages__item {
+    width: 25%;
   }
 }

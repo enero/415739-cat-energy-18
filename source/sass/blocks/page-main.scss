@@ -1,28 +1,14 @@
 .page-main {
-  @include mobile-side-padding;
   background-color: $page-main-bg-color;
 }
 
-@media (min-width: $tablet-width) {
-  .page-main {
-    @include tablet-side-padding;
-  }
-}
-
 @media (min-width: $desktop-width) {
-  .page-main {
-    @include desktop-side-padding;
+  .page-main__programs {
     margin-top: 80px;
   }
-}
 
-@media (max-width: $mobile-width-only) {
-  .page-main--catalog {
-    padding-left: 0;
-    padding-right: 0;
-
-    & .page-main__title {
-      @include mobile-side-padding;
-    }
+  .page-main__products {
+    padding-left: 70px;
+    padding-right: 70px;
   }
 }
