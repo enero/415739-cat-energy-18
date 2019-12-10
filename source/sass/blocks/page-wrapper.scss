@@ -5,13 +5,13 @@
 
 @media (min-width: $tablet-width) {
   .page-wrapper {
-    width: 768px;
+    width: $tablet-width;
   }
 }
 
 @media (min-width: $desktop-width) {
   .page-wrapper {
-    width: 1440px;
+    width: $desktop-width;
   }
 
   .page-wrapper--bg-top-right {

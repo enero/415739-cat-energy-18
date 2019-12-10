@@ -3,7 +3,6 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  min-height: 65px;
   box-sizing: border-box;
   background-color: $page-header-bg-color;
   color: $page-header-color;
@@ -19,7 +18,6 @@
   .page-header {
     background-image: none;
     flex-direction: row;
-    height: 60px;
     background-color: transparent;
   }
 
