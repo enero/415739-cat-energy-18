@@ -7,7 +7,39 @@
   color: $advantages-title-color;
 }
 
+.advantages__list {
+  @include reset-list();
+}
+
 .advantages__item {
   @include text("Arial", 14px, 18px);
   color: $advantages-item-color;
+}
+
+@media (max-width: $mobile-width-only) {
+  .advantages__item + .advantages__item {
+    margin-top: 20px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .advantages__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .advantages__item {
+    width: 50%;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .advantages__list {
+    flex-wrap: nowrap;
+  }
+
+  .advantages__item {
+    width: 25%;
+  }
 }

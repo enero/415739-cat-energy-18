@@ -1,3 +1,20 @@
 .page-main {
   background-color: $page-main-bg-color;
 }
+
+.page-main__title {
+  @include text("Oswald", 36px, 60px);
+  height: 105px;
+}
+
+@media (min-width: $tablet-width) {
+  .page-main__title {
+    font-size: 60px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-main__programs {
+    margin-top: 80px;
+  }
+}
