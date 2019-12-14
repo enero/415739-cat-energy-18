@@ -1,20 +1,16 @@
 .page-footer {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 0 auto;
   background-color: $page-footer-bg-color;
 }
 
-@media (min-width: $tablet-width) {
-  .page-footer {
-    flex-direction: row;
-    justify-content: space-between;
-  }
+.page-footer__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-@media (min-width: $desktop-width) {
-  .page-footer {
-    width: 1220px;
+@media (min-width: $tablet-width) {
+  .page-footer__container {
+    flex-direction: row;
+    justify-content: space-between;
   }
 }

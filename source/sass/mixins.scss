@@ -6,6 +6,7 @@
 
 @mixin text($fontFamily, $fontSize, $lineHeight) {
   font-family: $fontFamily, sans-serif;
+  font-weight: 400;
   font-size: $fontSize;
   line-height: $lineHeight;
 }

@@ -8,7 +8,6 @@
 
 .intro__title {
   @include text("Oswald", 36px, 36px);
-  font-weight: normal;
   color: $intro-header-color;
   margin: 0;
   padding-top: 29px;

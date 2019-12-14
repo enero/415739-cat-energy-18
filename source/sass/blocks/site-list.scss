@@ -17,6 +17,10 @@
     flex-direction: row;
   }
 
+  .site-list__item a {
+    font-weight: 400;
+  }
+
   .site-list__item + .site-list__item {
     margin-left: 38px;
   }
