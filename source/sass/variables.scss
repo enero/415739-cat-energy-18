@@ -1,6 +1,7 @@
 /* colors */
 $white: #ffffff;
 $lightgray: #f2f2f2;
+$lightgray-2: rgba(0, 0, 0, 0.1);
 $lightgreen: #68b738;
 $lightgreen-2: #64a83b;
 $black: #111111;
@@ -17,7 +18,9 @@ $page-main-bg-color: transparent;
 
 $page-footer-bg-color: $lightgray;
 
+$site-list-item-border-color: $lightgray;
 $site-list-link-color: $black;
+$site-list-link-invert-color: $white;
 
 $intro-bg-color: $lightgreen-2;
 $intro-header-color: $white;
@@ -27,6 +30,7 @@ $intro-slogan-invert-color: $black;
 
 $programs-bg-color: $white;
 $programs-item-bg-color: $lightgray;
+$programs-icon-bg-color: $lightgreen;
 $programs-title-color: $black;
 $programs-description-color: $darkgray;
 $programs-button-bg-color: $lightgreen;
@@ -34,8 +38,10 @@ $programs-button-color: $white;
 $programs-catalog-link-color: $black;
 
 $advantages-bg-color: $white;
+$advantages-bg-icon-color: $lightgreen;
 $advantages-title-color: $black;
 $advantages-item-color: $darkgray;
+$advantages-number-color: $lightgray;
 
 $products-bg-color: $white;
 $product-item-bg-color: $lightgray;
@@ -53,6 +59,8 @@ $show-more-button-bg-color: $lightgray;
 $show-more-button-color: $darkgray;
 
 $copyright-link-color: $darkgray;
+
+$separator-color: $lightgray-2;
 
 /* dimentions */
 $mobile-width-only: 767px;
