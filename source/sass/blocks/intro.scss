@@ -11,22 +11,29 @@
   color: $intro-header-color;
   margin: 0;
   padding-top: 29px;
+  text-align: center;
 }
 
 .intro__slogan {
   @include text("Oswald", 14px, 14px);
+  margin: 19px 0 0 0;
   text-transform: uppercase;
   color: $intro-slogan-color;
+  text-align: center;
 }
 
-.intro__image {
-  display: block;
-  margin: 0 auto;
+.intro__picture {
+  margin-top: -140px;
+
+  & img {
+    display: block;
+    margin: 0 auto;
+  }
 }
 
 @media (min-width: $tablet-width) {
   .intro__header {
-    max-width: 588px;
+    max-width: 600px;
     min-height: auto;
     background-image: none;
     background-color: transparent;
@@ -34,20 +41,45 @@
   }
 
   .intro__title {
+    font-size: 60px;
+    line-height: 60px;
     color: $intro-header-invert-color;
+    text-align: left;
   }
 
   .intro__slogan {
+    font-size: 20px;
+    line-height: 20px;
     color: $intro-slogan-invert-color;
+    text-align: left;
+  }
+
+  .intro__picture {
+    position: relative;
+    margin-top: 0;
+  }
+
+  .intro__button {
+    position: relative;
+    max-width: 600px;
+    top: -247px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .intro {
     height: 630px;
+    padding: 90px;
+    box-sizing: border-box;
   }
 
-  .intro__header {
+  .intro__header,
+  .intro__button {
     max-width: 100%;
+  }
+
+  .intro__title,
+  .intro__slogan {
+    width: 550px;
   }
 }

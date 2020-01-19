@@ -4,6 +4,11 @@
 
 .programs__choose-button {
   @include text("Oswald", 14px, 18px);
+  display: inline-block;
+  vertical-align: top;
+  width: 100%;
+  padding: 14px 10px;
+  box-sizing: border-box;
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
@@ -13,21 +18,41 @@
 
 .programs__list {
   @include reset-list;
+  margin-top: 22px;
 }
 
 .programs__item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 24px 22px 22px 22px;
+  box-sizing: border-box;
   background-color: $programs-item-bg-color;
-  min-height: 100px;
+}
+
+.programs__icon {
+  position: absolute;
+  top: 24px;
+  left: 22px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: $programs-icon-bg-color;
 }
 
 .programs__title {
-  @include text("Oswald", 24px, 37px);
+  @include text("Oswald", 24px, 50px);
+  padding-left: 70px;
+  margin: 0 0 24px 0;
   text-transform: uppercase;
   color: $programs-title-color;
 }
 
 .programs__description {
   @include text("Arial", 14px, 18px);
+  margin: 0 0 20px 0;
+  padding-bottom: 23px;
+  border-bottom: 1px solid $separator-color;
   color: $programs-description-color;
 }
 
@@ -44,6 +69,48 @@
   }
 }
 
+@media (min-width: $tablet-width) {
+  .programs__choose-button {
+    width: auto;
+  }
+
+  .programs__item {
+    padding: 81px 285px 62px 52px;
+  }
+
+  .programs__item + .programs__item {
+    margin-top: 30px;
+  }
+
+  .programs__icon {
+    top: 92px;
+    right: 62px;
+    left: auto;
+    width: 200px;
+    height: 200px;
+  }
+
+  .programs__title {
+    padding-left: 0;
+    margin-bottom: 26px;
+    font-size: 36px;
+    line-height: 48px;
+  }
+
+  .programs__description {
+    margin-bottom: 61px;
+    padding-bottom: 0;
+    border-bottom: 0;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .programs__catalog-link {
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
 @media (min-width: $desktop-width) {
   .programs__list {
     display: flex;
@@ -52,5 +119,24 @@
 
   .programs__item {
     width: 570px;
+    padding: 47px 56px 62px 52px;
+  }
+
+  .programs__item + .programs__item {
+    margin-top: 0;
+  }
+
+  .programs__icon {
+    top: 47px;
+    left: 52px;
+    right: auto;
+    width: 100px;
+    height: 100px;
+  }
+
+  .programs__title {
+    padding-left: 164px;
+    font-size: 36px;
+    line-height: 100px;
   }
 }

@@ -5,7 +5,33 @@
 .page-footer__container {
   display: flex;
   flex-direction: column;
+}
+
+.page-footer__item {
+  display: flex;
+  justify-content: center;
   align-items: center;
+
+  &_logo {
+    padding-top: 39px;
+    padding-bottom: 31px;
+  }
+
+  &_social {
+    padding-top: 24px;
+    padding-bottom: 21px;
+  }
+
+  &_copyright {
+    padding-top: 22px;
+    padding-bottom: 22px;
+  }
+}
+
+@media (max-width: $mobile-width-only) {
+  .page-footer__item + .page-footer__item {
+    border-top: 1px solid $separator-color;
+  }
 }
 
 @media (min-width: $tablet-width) {
